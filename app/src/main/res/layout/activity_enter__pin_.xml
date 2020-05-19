@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".Activity.Enter_PIN_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@color/button_background"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/back_arrow_pin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marginTop_10dp"
+            android:layout_weight="0.2"
+            android:padding="2dp"
+            android:src="@drawable/ic_arrow_32dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:text="Enter PIN"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/header"
+        android:tint="@color/button_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="@dimen/page_padding"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_5dp"
+            android:text="PIN"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <EditText
+            android:id="@+id/edit_pin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:background="@drawable/edittext_border"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="30"
+            android:paddingLeft="@dimen/edittext_paddingLeft"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_5dp"
+            android:text="Mobile No"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <EditText
+            android:id="@+id/edit_mob_no"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:background="@drawable/edittext_border"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="30"
+            android:paddingLeft="@dimen/edittext_paddingLeft"
+            android:textSize="@dimen/text_size_16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_next_pin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_click_effect"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Next"
+        android:textColor="@color/white" />
+</LinearLayout>

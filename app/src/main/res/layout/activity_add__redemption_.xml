@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@color/white"
+    android:id="@+id/layout_add_redeem"
+    tools:context=".Activity.Add_Redemption_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@color/button_background"
+        android:orientation="horizontal"
+        android:elevation="@dimen/margin_8dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:foreground="?actionBarItemBackground"
+            android:id="@+id/back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_weight="0.2"
+            android:padding="7dp"
+            android:src="@drawable/ic_arrow_32dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:text="Setup"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/margin_8dp"
+            android:textSize="@dimen/text_size_18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_marginBottom="@dimen/height_50dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_intro"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30dp"
+                android:paddingLeft="@dimen/marginTop_10dp"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:paddingRight="@dimen/marginTop_10dp"
+                android:textColor="@color/black"
+                android:text="@string/reward_points"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <ListView
+                android:id="@+id/listview_redemptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_100dp"
+                android:clickable="true"
+                android:divider="@color/white"
+                android:paddingLeft="@dimen/marginTop_10dp"
+                android:paddingRight="@dimen/marginTop_10dp"
+                android:dividerHeight="@dimen/margin_8dp"
+                android:longClickable="true"
+                android:visibility="gone"></ListView>
+
+
+            <ImageView
+                android:id="@+id/image_emptylist"
+                android:layout_width="@dimen/height_200dp"
+                android:layout_height="@dimen/height_200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/emptycart"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/text_no_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:text="You have no redeem vouchers"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/text_add_redeem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginTop_10dp"
+                android:layout_marginTop="@dimen/height_40dp"
+                android:layout_marginRight="@dimen/marginTop_10dp"
+                android:layout_marginBottom="@dimen/height_30dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center|left"
+                android:text="Set up Redemption voucher options for the points awarded"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30dp"
+                android:gravity="center|top"
+                android:layout_gravity="bottom"
+                android:text="@string/remark_add_item"
+                android:textSize="@dimen/text_size_14sp"
+                android:textStyle="italic"></TextView>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button_next_add_redemption"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/next_button_50dp"
+        android:background="@drawable/btn_click_effect"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:background="@android:color/transparent"
+            android:text="Next"
+            android:clickable="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="@dimen/height_30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/r_arrow"
+            android:tint="@color/white"
+            android:clickable="false"
+            android:layout_marginLeft="-5dp"
+            android:padding="@dimen/marginTop_10dp"
+            android:layout_marginRight="@dimen/height_30dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

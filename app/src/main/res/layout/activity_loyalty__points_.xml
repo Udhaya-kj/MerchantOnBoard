@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@color/button_background"
+        android:elevation="@dimen/margin_8dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/transparent"
+            android:foreground="?actionBarItemBackground"
+            android:padding="7dp"
+            android:src="@drawable/ic_arrow_32dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_8dp"
+            android:text="Setup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18sp" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="Setup Reward Points"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_110dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginLeft="@dimen/marginTop_10dp"
+            android:layout_marginRight="@dimen/marginTop_10dp"
+            android:background="@drawable/layout_white_design"
+            android:elevation="@dimen/padding_2dp"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5dp">
+
+            <TextView
+
+                android:id="@+id/text_points_issued"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:text="Points issued for $1"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_marginTop="@dimen/padding_3dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="0.85">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_2dp"
+                        android:layout_marginBottom="@dimen/padding_2dp"
+                        android:layout_weight=".15"
+                        app:cardCornerRadius="@dimen/margin_5dp">
+
+                        <TextView
+                            android:id="@+id/text_1unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/black" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_2dp"
+                        android:layout_marginBottom="@dimen/padding_2dp"
+                        android:layout_weight="0.15"
+                        app:cardCornerRadius="@dimen/margin_5dp">
+
+                        <TextView
+                            android:id="@+id/text_5units"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="@color/black" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_2dp"
+                        android:layout_marginBottom="@dimen/padding_2dp"
+                        android:layout_weight="0.15"
+                        app:cardCornerRadius="@dimen/margin_5dp">
+
+                        <TextView
+                            android:id="@+id/text_10units"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:text="10"
+                            android:textColor="@color/black" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_2dp"
+                        android:layout_marginBottom="@dimen/padding_2dp"
+                        android:layout_weight="0.15"
+                        app:cardCornerRadius="@dimen/margin_5dp">
+
+                        <TextView
+                            android:id="@+id/text_15units"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:text="15"
+                            android:textColor="@color/black" />
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center|left"
+            android:text="@string/dollar_spent"
+            android:textColor="@color/grey_d"
+            android:textStyle="italic"
+            android:visibility="gone"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_130dp"
+            android:layout_marginLeft="@dimen/marginTop_10dp"
+            android:layout_marginTop="@dimen/marginTop_10dp"
+            android:layout_marginRight="@dimen/marginTop_10dp"
+            android:background="@drawable/layout_white_design"
+            android:elevation="@dimen/padding_2dp"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5dp">
+
+            <TextView
+                android:id="@+id/text_amt_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_currency"
+                    android:layout_width="@dimen/height_40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/page_padding"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <EditText
+                    android:id="@+id/edit_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:minWidth="@dimen/height_80dp"
+                    android:paddingLeft="@dimen/marginTop_10dp"
+                    android:paddingRight="@dimen/marginTop_10dp"
+                    android:text="1"
+                    android:textSize="@dimen/text_size_16sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:gravity="center_vertical"
+                android:text="(No points will be issued for purchase below this amount)"
+                android:textColor="@color/grey_d"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:textSize="@dimen/text_size_13sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginTop_10dp"
+            android:layout_marginTop="@dimen/marginTop_10dp"
+            android:layout_marginRight="@dimen/marginTop_10dp"
+            android:background="@drawable/layout_white_design"
+            android:elevation="@dimen/padding_2dp"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:text="Points expires in (days)"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_50dp"
+                android:layout_marginTop="@dimen/padding_3dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/edittext_paddingLeft"
+                    android:text="days"
+                    android:textSize="@dimen/text_size_16sp"
+                    android:visibility="gone"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="0.85">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_2dp"
+                        android:layout_marginBottom="@dimen/padding_2dp"
+                        android:layout_weight="0.15"
+                        app:cardCornerRadius="@dimen/margin_5dp">
+
+                        <TextView
+                            android:id="@+id/text_60days"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:text="60"
+                            android:textColor="@color/black" />
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_2dp"
+                        android:layout_marginBottom="@dimen/padding_2dp"
+                        android:layout_weight="0.15"
+                        app:cardCornerRadius="@dimen/margin_5dp">
+
+                        <TextView
+                            android:id="@+id/text_90days"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:text="90"
+                            android:textColor="@color/black" />
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_2dp"
+                        android:layout_marginBottom="@dimen/padding_2dp"
+                        android:layout_weight="0.15"
+                        app:cardCornerRadius="@dimen/margin_5dp">
+
+                        <TextView
+                            android:id="@+id/text_180days"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:text="180"
+                            android:textColor="@color/black" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/padding_2dp"
+                        android:layout_marginBottom="@dimen/padding_2dp"
+                        android:layout_weight="0.15"
+                        app:cardCornerRadius="@dimen/margin_5dp">
+
+                        <TextView
+                            android:id="@+id/text_360days"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/grey"
+                            android:gravity="center"
+                            android:text="360"
+                            android:textColor="@color/black" />
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:gravity="top|left"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:text="@string/points_remark"
+                android:textColor="@color/grey_d"
+                android:textSize="@dimen/text_size_13sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_next_loyalty_points"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/next_button_50dp"
+        android:background="@drawable/btn_click_effect"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="right|center"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="@dimen/height_30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="@dimen/height_30dp"
+            android:clickable="false"
+            android:padding="@dimen/marginTop_10dp"
+            android:src="@drawable/r_arrow"
+            android:tint="@color/white" />
+    </LinearLayout>
+</LinearLayout>

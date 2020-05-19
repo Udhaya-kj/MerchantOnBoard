@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:id="@+id/linear_success"
+    tools:context=".Activity.Success_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@color/button_background"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/text_size_20sp"
+            android:text="Setup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="@dimen/marginTop_10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/success1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:gravity="center"
+                android:text="Congratulations"
+                android:textColor="@color/green_hase"
+                android:textSize="@dimen/text_size_20sp" />
+
+            <TextView
+                android:id="@+id/success2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/success1"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:gravity="center"
+                android:text="@string/success1"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/success3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/success2"
+                android:layout_marginTop="@dimen/marginTop_20dp"
+                android:gravity="center|left"
+                android:text="Next Steps :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/success4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/success3"
+                android:layout_marginTop="@dimen/marginTop_20dp"
+                android:gravity="center|left"
+                android:text="@string/success2"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/success5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/success4"
+                android:layout_marginTop="@dimen/marginTop_20dp"
+                android:gravity="center|left"
+                android:text="@string/success3"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/success6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/success5"
+                android:layout_marginTop="@dimen/marginTop_20dp"
+                android:gravity="center|left"
+                android:text="@string/success4"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/textView_open_playstore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click here to open Merchant Application"
+                android:layout_marginBottom="@dimen/marginTop_20dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/text_size_18sp"
+                android:gravity="center_horizontal"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_success"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@drawable/btn_click_effect"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Close"
+        android:textColor="@color/white" />
+
+</LinearLayout>

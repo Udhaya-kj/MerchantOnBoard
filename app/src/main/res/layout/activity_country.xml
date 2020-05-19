@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:id="@+id/layout_country"
+    tools:context=".Activity.CountryActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Corals"
+        android:gravity="center"
+        android:elevation="@dimen/margin_8dp"
+        android:textColor="@color/white"
+        android:background="@color/button_background"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_20sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:weightSum="3.4"
+        android:padding="@dimen/page_padding"
+
+        android:orientation="vertical"
+        >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center|left"
+        android:textSize="@dimen/text_size_16sp"
+        android:text="Select Country"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/edittext_border"
+        android:layout_weight="0.25">
+
+    <Spinner
+        android:id="@+id/spinner_country"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:spinnerMode="dialog"
+
+         />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center|left"
+        android:textSize="@dimen/text_size_16sp"
+        android:text="Mobile Number"
+        />
+
+
+    <EditText
+        android:id="@+id/edit_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/edittext_border"
+        android:inputType="number"
+        android:maxLength="14"
+        android:imeOptions="actionDone"
+        android:paddingLeft="@dimen/edittext_paddingLeft" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:gravity="top|left"
+        android:paddingLeft="@dimen/margin_5dp"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="italic"
+        android:text="@string/mobile_number_content"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button_next_country"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/next_button_50dp"
+        android:background="@drawable/btn_click_effect"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:background="@android:color/transparent"
+            android:text="Next"
+            android:clickable="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="@dimen/height_30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/r_arrow"
+            android:tint="@color/white"
+            android:clickable="false"
+            android:layout_marginLeft="-5dp"
+            android:padding="@dimen/marginTop_10dp"
+            android:layout_marginRight="@dimen/height_30dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

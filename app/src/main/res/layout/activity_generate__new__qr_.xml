@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@color/button_background"
+        android:orientation="horizontal"
+        android:elevation="@dimen/margin_8dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:foreground="?actionBarItemBackground"
+            android:id="@+id/back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marginTop_10dp"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_arrow_32dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:text="Setup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp"
+
+            android:gravity="center"
+            android:padding="@dimen/page_padding"
+            android:text="Generate a New QR"
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80dp"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/page_padding"
+            android:text="A new QR unique to you will be generated and sent to your email address entered."
+            android:textSize="@dimen/text_size_16sp"
+            android:textStyle="normal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_2dp"
+            android:weightSum="2">
+
+            <TextView
+                android:background="@color/button_background"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/text_scan_qr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/page_padding"
+                android:text="Scan QR"
+                android:layout_margin="@dimen/padding_2dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="@color/button_background_red"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/text_cancel"
+                android:layout_margin="@dimen/padding_2dp"
+                android:layout_width="0dp"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/page_padding"
+                android:text="Cancel"
+                android:textSize="@dimen/text_size_16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MapsActivity" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_map_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/height_50dp"
+        android:background="#FCE5CE"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/pointer" />
+
+
+
+    <Button
+        android:id="@+id/button_map_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_click_effect"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="OK"
+        android:textColor="@color/white" />
+
+
+
+</FrameLayout>

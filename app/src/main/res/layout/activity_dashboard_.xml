@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@android:color/transparent"
+                android:foreground="?actionBarItemBackground"
+                android:id="@+id/bg_top_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-45dp"
+                android:src="@drawable/ic_bg_topheader" />
+
+            <ImageView
+                android:id="@+id/image_back_dashboard"
+                android:layout_width="@dimen/height_40dp"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_marginStart="@dimen/marginTop_10dp"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:layout_marginBottom="@dimen/height_40dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_arrow_32dp" />
+
+            <ImageView
+                android:id="@+id/user_photo"
+                android:layout_width="@dimen/height_130dp"
+                android:layout_height="@dimen/height_130dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/height_40dp"
+                android:src="@drawable/onboard_icon1" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/height_70dp"
+                android:text="Corals Onboard"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_new_merchant"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_weight="0.45"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:padding="8dp"
+                    android:src="@drawable/new_merchant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/new_merchant"
+                    android:textColor="@color/black"
+
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_existing_merchant"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_weight="0.45"
+            android:background="@color/grey"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:backgroundTint="@color/grey"
+                    android:padding="8dp"
+                    android:src="@drawable/existing_merchant" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/existing_merchant"
+                    android:textColor="@color/black"
+
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+    <Button
+        android:id="@+id/button_submit_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/btn_click_effect"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

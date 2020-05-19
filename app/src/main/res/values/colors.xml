@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#169416</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="blue">#429EFA</color>
+    <color name="blue_green">#07B990</color>
+    <color name="light_blue">#70C8FA</color>
+    <color name="dark_blue">#0C8CEB</color>
+    <color name="dark_orange">#FBAB4C</color>
+    <color name="orange">#F05A26</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="button_background">#399C39</color>
+    <color name="app_text">#FA813C</color>
+    <color name="fade_white">#f2f2f2</color>
+    <color name="Green">#0B8D0B</color>
+    <color name="grey">#EEEEEE</color>
+    <color name="light_grey">#EBEBEB</color>
+    <color name="red"> #FC3B20</color>
+    <color name="red1"> #FD5848</color>
+    <color name="blur_blue">#F9FBFD</color>
+    <color name="button_background_red">#F85D37</color>
+    <color name="transparent_black">#95000000</color>
+    <color name="transparent_white">#60ffffff</color>
+    <color name="transparent_orange">#30FE9129</color>
+
+    <color name="matt_black">#333333</color>
+    <color name="fade_black">#424242</color>
+    <color name="off_white">#ecf0f1</color>
+    <color name="black_color">#2e2e2e</color>
+    <color name="lynch_color">#687786</color>
+    <color name="iron_white">#dadfe1</color>
+    <color name="gold">#fad859</color>
+    <color name="gossip_green">#87d37c</color>
+    <color name="green_hase">#04BA90</color>
+    <color name="green_hase_light">#20D6AC</color>
+    <color name="yellow_ripe_lemon">#f7ca18</color>
+    <color name="saffron">#f4d03f</color>
+    <color name="white_smoke">#ececec</color>
+    <color name="pumice">#d2d7d3</color>
+    <color name="dark_grey">#DDDDDD</color>
+    <color name="light_black">#5A5958</color>
+    <color name="light_green">#21D316</color>
+    <color name="grey_dark">#EEEEEE</color>
+    <color name="green2">#21E095</color>
+    <color name="grey_d">#8B8C8C</color>
+    <color name="blue_middle">#3AA8E7</color>
+
+    //voucher
+    <color name="red_color">#E84646</color>
+    <color name="green_color">#12C06A</color>
+    <color name="blue_color">#1581FE</color>
+
+</resources>

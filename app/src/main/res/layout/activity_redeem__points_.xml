@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".Activity.Redeem_Points_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@color/button_background"
+        android:orientation="horizontal"
+        android:elevation="@dimen/margin_8dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:foreground="?actionBarItemBackground"
+            android:id="@+id/back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_weight="0.2"
+            android:padding="7dp"
+            android:src="@drawable/ic_arrow_32dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:text="Setup"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/margin_8dp"
+            android:textSize="@dimen/text_size_18sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_5dp"
+        android:layout_marginBottom="@dimen/height_50dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40dp"
+            android:gravity="center"
+            android:text="@string/setup_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="always"
+            android:padding="@dimen/page_padding"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:gravity="center|start"
+                    android:text="Redeem Title" />
+
+                <EditText
+
+                    android:id="@+id/edit_redeem_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center|start"
+                    android:hint="Enter title"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/text_size_15sp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter at least 10 characters"
+                android:textColor="@color/grey_d"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:gravity="center|start"
+                    android:text="Redeem Description" />
+
+
+                <EditText
+                    android:id="@+id/edit_redeem_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center|start"
+                    android:hint="Enter description"
+                    android:padding="@dimen/margin_8dp"
+                    android:minHeight="@dimen/height_70dp"
+                    android:paddingLeft="@dimen/text_size_15sp"
+                    android:singleLine="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter at least 15 characters"
+                    android:textColor="@color/grey_d"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:gravity="center|start"
+                    android:text="Enter your points" />
+
+
+                <EditText
+
+                    android:id="@+id/edit_redeem_bonus"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:background="@drawable/edittext_border"
+                    android:gravity="center|start"
+                    android:maxLength="5"
+                    android:hint="1 to 99999"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/text_size_15sp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:gravity="center|start"
+                    android:text="When do you want to activate this voucher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:background="@drawable/edittext_border"
+                    >
+                    <TextView
+                        android:id="@+id/edit_start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center|start"
+                        android:paddingLeft="@dimen/marginTop_10dp"
+                        android:paddingRight="@dimen/marginTop_10dp"
+                        android:hint="Select Activate Date"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:gravity="center|start"
+                    android:text="When do you want this voucher to expire" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@drawable/edittext_border"
+                >
+                <TextView
+                    android:id="@+id/edit_expiry_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/marginTop_10dp"
+                    android:hint="Select Expiry Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:gravity="center|start"
+                    android:text="Limit certain hours within a day when this voucher can be redeemed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@drawable/edittext_border"
+                >
+                <TextView
+                    android:id="@+id/edit_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/marginTop_10dp"
+                    android:hint="Select Activate Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:gravity="center"
+                    android:text="Limit certain hours within a day when this voucher can be expired" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@drawable/edittext_border"
+                >
+                <TextView
+                    android:id="@+id/edit_expiry_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:paddingLeft="@dimen/marginTop_10dp"
+                    android:hint="Select Expiry Time"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16sp" />
+            </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_marginTop="@dimen/marginTop_10dp"
+                    android:gravity="center|start"
+                    android:textStyle="bold"
+                    android:text="Which weekdays does this voucher displayed to customer?"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/marginTop_10dp"
+                            android:text="Sunday" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" />
+
+                        <Button
+                            android:id="@+id/btn_yes_sunday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.09"
+                            android:background="@drawable/yes_select_selector" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/marginTop_10dp"
+                            android:text="Monday" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" />
+
+                        <Button
+                            android:id="@+id/btn_yes_monday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.09"
+                            android:background="@drawable/yes_select_selector" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/marginTop_10dp"
+                            android:text="Tuesday" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" />
+
+                        <Button
+                            android:id="@+id/btn_yes_tuesday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.09"
+                            android:background="@drawable/yes_select_selector" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/marginTop_10dp"
+                            android:text="Wednesday" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" />
+
+                        <Button
+                            android:id="@+id/btn_yes_wedsnesday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.09"
+                            android:background="@drawable/yes_select_selector" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/marginTop_10dp"
+                            android:text="Thursday" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" />
+
+                        <Button
+                            android:id="@+id/btn_yes_thursday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.09"
+                            android:background="@drawable/yes_select_selector" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/marginTop_10dp"
+                            android:text="Friday" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" />
+
+                        <Button
+                            android:id="@+id/btn_yes_friday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.09"
+                            android:background="@drawable/yes_select_selector" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_30dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/marginTop_10dp"
+                            android:text="Saturday" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" />
+
+                        <Button
+                            android:id="@+id/btn_yes_saturday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.09"
+                            android:background="@drawable/yes_select_selector" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_next_redeem_point"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.5"
+        android:background="@drawable/btn_click_effect"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Preview"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+
+
+</LinearLayout>

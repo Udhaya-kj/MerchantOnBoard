@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:scrollbars="vertical"
+    android:nestedScrollingEnabled="false"
+    android:layout_height="@dimen/height_40dp">
+
+    <LinearLayout
+        android:id="@+id/layout_competitors"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:clickable="true"
+        >
+        <CheckBox
+            android:id="@+id/checkbox_select_competitors"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:padding="@dimen/margin_5dp"
+            android:clickable="false"
+            />
+
+        <TextView
+            android:clickable="false"
+            android:id="@+id/text_competitors"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

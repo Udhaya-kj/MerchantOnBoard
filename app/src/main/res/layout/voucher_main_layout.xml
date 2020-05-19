@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/white_background_round_corner_8dp"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+    ​
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_background_round_corner_28dp"
+        android:paddingStart="14dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="8dp"
+        android:text="Shareable"
+        android:textColor="@android:color/background_light" />
+    ​
+
+    <include layout="@layout/voucher_layout_view" />
+    ​
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+        ​
+
+        <TextView
+            android:id="@+id/from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/calendar"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:text="02 Feb, 2020 to 29 Feb, 2020"
+            android:textSize="12sp" />
+        ​
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:drawableStart="@drawable/time"
+            android:drawablePadding="8dp"
+            android:gravity="start|center"
+            android:text="03:00 to 13:00"
+            android:textSize="12sp" />
+    </LinearLayout>
+    ​
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_size_20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sunday"
+            android:layout_width="@dimen/text_size_25sp"
+            android:layout_height="18dp"
+            android:gravity="center"
+            android:text="Sun"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_8dp" />
+
+        <TextView
+            android:id="@+id/monday"
+            android:layout_width="@dimen/text_size_25sp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="Mon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_8dp" />
+
+        <TextView
+            android:id="@+id/tuesday"
+            android:layout_width="@dimen/text_size_25sp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="Tue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_8dp" />
+
+        <TextView
+            android:id="@+id/wednesday"
+            android:layout_width="@dimen/text_size_25sp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="Wed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_8dp" />
+
+        <TextView
+            android:id="@+id/thursday"
+            android:layout_width="@dimen/text_size_25sp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="Thu"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_8dp" />
+
+        <TextView
+            android:id="@+id/friday"
+            android:layout_width="@dimen/text_size_25sp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="Fri"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_8dp" />
+
+        <TextView
+            android:id="@+id/saturday"
+            android:layout_width="@dimen/text_size_25sp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:gravity="center"
+            android:text="Sat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_8dp" />
+
+    </LinearLayout>
+    ​
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+        ​
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:text="Cancel" />
+        ​
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:text="OK"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue_color" />
+    </LinearLayout>
+</LinearLayout>

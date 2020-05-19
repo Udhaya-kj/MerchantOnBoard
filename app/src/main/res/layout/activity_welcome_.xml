@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@color/button_background"
+        android:elevation="@dimen/margin_8dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_arrow_32dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Welcome to Corals"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/step1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30dp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:text="Congratulations!"
+                android:textColor="@color/green_hase"
+                android:textSize="@dimen/text_title"
+                />
+            <TextView
+                android:id="@+id/step2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step1"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:gravity="center|left"
+                android:padding="@dimen/margin_8dp"
+                android:text="@string/welcome_step1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/step3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step2"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:gravity="center|left"
+                android:padding="@dimen/margin_8dp"
+                android:text="@string/welcome_step2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <com.like.LikeButton
+                android:layout_below="@id/step3"
+                app:liked="false"
+                app:anim_scale_factor="4"
+                app:icon_type="star"
+                app:icon_size="22dp"
+                android:id="@+id/star_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/height_30dp"
+                android:layout_width="@dimen/height_130dp"
+                android:layout_height="@dimen/height_130dp"/>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-150dp"
+                android:layout_marginStart="-4dp"
+                android:src="@drawable/bottom_design"
+                android:tint="@color/green2" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/button_next_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/next_button_50dp"
+        android:background="@drawable/btn_click_effect"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="right|center"
+            android:text="Next"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="@dimen/height_30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="@dimen/height_30dp"
+            android:clickable="false"
+            android:padding="@dimen/marginTop_10dp"
+            android:src="@drawable/r_arrow"
+            android:tint="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

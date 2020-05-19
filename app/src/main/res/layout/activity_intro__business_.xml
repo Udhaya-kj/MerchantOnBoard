@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:background="@color/button_background"
+        android:orientation="horizontal"
+        android:elevation="@dimen/margin_8dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:background="@android:color/transparent"
+            android:foreground="?actionBarItemBackground"
+            android:id="@+id/back_arrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_weight="0.2"
+            android:padding="7dp"
+            android:src="@drawable/ic_arrow_32dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:gravity="center_vertical"
+            android:text="Setup"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/margin_8dp"
+            android:textSize="@dimen/text_size_18sp" />
+
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/height_50dp"
+        android:layout_marginBottom="@dimen/height_50dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/page_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Tell about your business to your customers"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_marginTop="@dimen/marginTop_10dp"
+                android:gravity="center_vertical"
+                android:text="Business Display Name"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <EditText
+                android:id="@+id/edit_bussiness_disp_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@drawable/edittext_border"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="30"
+                android:paddingLeft="@dimen/edittext_paddingLeft"
+                android:textSize="@dimen/text_size_16sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:gravity="center_vertical"
+                android:text="What do you offer?"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <EditText
+                android:id="@+id/edit_intro_buss_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:gravity="top"
+                android:maxLength="2000"
+                android:minHeight="@dimen/height_80dp"
+                android:padding="@dimen/margin_8dp"
+                android:singleLine="false"
+                android:textSize="@dimen/text_size_16sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:gravity="center_vertical"
+                android:text="Contact Number"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <EditText
+                android:id="@+id/edit_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@drawable/edittext_border"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="14"
+                android:paddingLeft="@dimen/edittext_paddingLeft"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:gravity="center_vertical"
+                android:text="Website URL"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <EditText
+                android:id="@+id/edit_website_url"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@drawable/edittext_border"
+                android:imeOptions="actionDone"
+                android:inputType="textWebEditText"
+                android:paddingLeft="@dimen/edittext_paddingLeft"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:gravity="center_vertical"
+                android:text="Business Competitors"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <TextView
+                android:id="@+id/text_select_competitors"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:background="@drawable/edittext_border"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/edittext_paddingLeft"
+                android:text="Select Competitors"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/button_next_intro_business"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/next_button_50dp"
+        android:background="@drawable/btn_click_effect"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:background="@android:color/transparent"
+            android:text="Next"
+            android:clickable="false"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="@dimen/height_30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/r_arrow"
+            android:tint="@color/white"
+            android:clickable="false"
+            android:layout_marginLeft="-5dp"
+            android:padding="@dimen/marginTop_10dp"
+            android:layout_marginRight="@dimen/height_30dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>
